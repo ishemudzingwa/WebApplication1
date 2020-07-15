@@ -13,7 +13,7 @@ namespace WebApplication1.Controllers
     {
         private static readonly string[] Summaries = new[]
         {
-            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
+            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching", "Hell"
         };
         //This doesn't do anything but it make the code different
         private readonly ILogger<WeatherForecastController> _logger;
@@ -22,7 +22,7 @@ namespace WebApplication1.Controllers
         {
             _logger = logger;
         }
-
+        //This is an action connection props means nothing it's just rubbish being written by me
         [HttpGet]
         public IEnumerable<WeatherForecast> Get()
         {
